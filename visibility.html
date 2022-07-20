@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        height: 200px;
+        width: 200px;
+        border: 5px solid indigo;
+        gap: 10px;
+      }
+      #box-1 {
+        background-color: aquamarine;
+      }
+      #box-2 {
+        background-color: burlywood;
+        /* display: none; */
+        visibility: hidden;
+      }
+      #box-3 {
+        background-color: blueviolet;
+      }
+      #box-3 > p {
+        margin-top: 0;
+        height: 200px;
+        overflow: scroll;
+        overflow-x: hidden;
+      }
+      #box-4 {
+        /* background-color: coral; */
+        border-color: brown;
+      }
+      .mini {
+        border: 3px solid sandybrown;
+        width: 150px;
+        overflow: hidden;
+        /* overflow-y: hidden; */
+      }
+      .sort-text {
+        white-space: nowrap; /*artical in one line */
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mini">
+      <p class="sort-text" title="Use the style attribute for styling HTML elements; Use background-color for background color;">
+        Use the style attribute for styling HTML elements; Use background-color for background color;
+      </p>
+    </div>
+    <!-- .box#box-$*4 -->
+    <div class="box" id="box-1"></div>
+    <div class="box" id="box-2"></div>
+    <!-- overflow -->
+    <div class="box" id="box-3">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum placeat esse excepturi dolorem atque consequatur, reprehenderit dolores
+        pariatur cum. Maiores molestias dolorem ut laudantium molestiae. Numquam odit saepe quidem, obcaecati, sequi ad impedit quia omnis et atque ut
+        non qui odio veniam iusto praesentium unde dolores fugit delectus illum. Voluptas aut illum magnam est provident eum unde repellendus
+        doloribus odio voluptatibus praesentium non aliquid ipsum mollitia, eveniet quo dignissimos sequi porro maiores. Magnam harum consequatur
+        nemo? Corporis dolorem sint mollitia voluptate? Impedit, amet, quae fuga, debitis error eaque ex saepe hic aut delectus possimus sint sunt
+        dolor tempore expedita natus!
+      </p>
+    </div>
+    <div class="box" id="box-4"></div>
+  </body>
+</html>
